@@ -1,0 +1,107 @@
+
+.default-header {
+  padding: 20px 60px;
+  @include media-breakpoint-down(lg) {
+    padding: 20px 30px;
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 0;
+  }
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+  background-color: white;
+  .header-wrap {
+    .navbar-self {
+      width: 100%;
+      background: none;
+      @include media-breakpoint-down (sm) {
+        margin-right: 0;
+        right: 0;
+        text-align: right;
+        padding: 20px 0;
+        z-index: 5;
+        background: $white;
+      }
+      @include transition();
+      transform-origin: 100% 50%;
+      &.hide {
+        transform: scale(0);
+      }
+      .nav-link {
+        padding-right: .5rem !important;
+        padding-left: .5rem !important;
+      }
+      .navbar-left-link {
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: $title-color;
+        margin: 0 25px;
+        display: inline-block;
+        @include media-breakpoint-down (sm) {
+          margin: 5px 0;
+        }
+        &:after {
+          content: '';
+          display: block;
+          margin: auto;
+          height: 3px;
+          width: 0;
+          background: transparent;
+          transition: width .5s ease, background-color .5s ease;
+        }
+        &:hover {
+          color: $primary-color;
+          text-decoration: none;
+          &:after {
+            width: 100%;
+            background: $black;
+          }
+        }
+      }
+      .logo-href {
+        @include media-breakpoint-down(sm) {
+          display: inline-block;
+          width: 75%
+        }
+        .head-logo {
+          width: 100%;
+          @include media-breakpoint-down(sm) {
+            width: 85%;
+            float: left;
+          }
+        }
+      }
+    }
+  }
+}
+
+.menu-bar {
+  cursor: pointer;
+  span {
+    color: $title-color;
+    font-size: 24px;
+  }
+}
+
+.main-menubar {
+  position: relative;
+}
+
+
+
+.white-menubar {
+  .menu-bar span {
+    color: $white;
+  }
+  nav a {
+    color: rgba($white, .7);
+    &:hover {
+      color: rgba($white, 1);
+    }
+  }
+}

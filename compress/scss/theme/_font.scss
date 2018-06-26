@@ -1,0 +1,26 @@
+$font-folder: '../fonts/';
+
+$font-list: (
+        '-BLACK': 800,
+        '-BLACKITALIC': 800,
+        '-BOLD': 700,
+        '-BOLDITALIC': 700,
+        '-EXTRABOLD': 900,
+        '-EXTRABOLDITALIC': 900,
+        '-ITALIC': 400,
+        '-MEDIUM': 500,
+        '-MEDIUMITALIC': 500,
+        '-LIGHT': 300,
+        '-LIGHTITALIC': 300,
+        '-REGULAR': 200,
+        '-SEMIBOLD': 300,
+        '-THIN': 300,
+);
+
+@each $name, $weight in $font-list {
+  @font-face {
+    font-family: 'MONTSERRAT';
+    font-weight: $weight;
+    src: url($font-folder + 'MONTSERRAT' + $name + '.ttf') format("truetype");
+  }
+}

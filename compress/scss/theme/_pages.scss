@@ -1,0 +1,70 @@
+.pages {
+  position: relative;
+  //background: url(assets/img/hakkimizida-background-2.png) no-repeat center center/cover;
+  .cont-header {
+    background: url(../img/background-layer.png) no-repeat center center/cover;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: linear-gradient(to bottom right, #c9c1a2, #c9c1a2);
+      opacity: .7;
+    }
+    .header-content-text {
+      width: 100%;
+      text-align: center;
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom right, #002f4b, #0c0b0b);
+        opacity: .6;
+      }
+      h3 {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        letter-spacing: 12px;
+        font-size: 3em;
+        @include media-breakpoint-down(sm) {
+          top: 58%;
+          font-size: 2em;
+        }
+      }
+    }
+  }
+  .cont-wrapper {
+    position: relative;
+    background: url(assets/img/hakkimizida-background-2.png) no-repeat center center/cover;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: linear-gradient(to bottom right, #ffe3be, #fbf3e9);
+      opacity: .9;
+    }
+    .about-us-content-wrapper {
+      padding: 0;
+    }
+    .magazine-view {
+
+    }
+  }
+  .border-top-generic {
+    padding: 100px 15px;
+  }
+  p {
+    margin-bottom: 30px;
+  }
+}

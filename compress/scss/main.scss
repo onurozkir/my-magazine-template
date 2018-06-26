@@ -1,0 +1,29 @@
+
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins/breakpoints";
+
+// including variables and mixins
+@import "theme/variables";
+@import "theme/font";
+@import "theme/mixins";
+@import "theme/flexbox";
+@import "theme/reset";
+
+// Custom Scss 
+@import "theme/elements";
+@import "theme/header";
+@import "theme/home";
+@import "theme/contact-page";
+@import "theme/about-page";
+@import "theme/magazines";
+@import "theme/pages";
+@import "theme/footer";
+
+
+// Plugins
+@import "plugins/owl";
+@import "plugins/magnific-popup";
+//@import "owl_carousel/owl.theme.default";
+//@import "owl_carousel/owl.theme.default";
+

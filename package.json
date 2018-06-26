@@ -1,0 +1,27 @@
+{
+  "name": "magazine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "keywords": [
+    "magazine"
+  ],
+  "author": "Onur ÖZKIR",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "jquery": "^3.3.1",
+    "grunt": "^1.0.2",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-uglify": "^0.7.0"
+  },
+  "devDependencies": {
+    "grunt-stripcomments": "^0.7.2",
+    "gulp-minify": "^2.1.0"
+  }
+}
